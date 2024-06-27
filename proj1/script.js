@@ -26,3 +26,5 @@ SmallImg[3].onclick = function() {
     ProductImg.src=SmallImg[3].src;
 }
 
+
+
