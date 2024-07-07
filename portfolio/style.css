@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
     scroll-behavior: smooth;
+    color: #fff;
 
 }
 
@@ -18,13 +19,16 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
-
+    position: relative;
+    
 
 }
 
 .navbar {
     display: flex;
     justify-content: center;
+    
+  
 
 }
 
@@ -133,6 +137,7 @@ p {
 
 .icon {
     margin-left: 2px;
+    color: #ffd700;
 }
 
 .btn-container {
@@ -161,4 +166,254 @@ p {
    
     color: goldenrod; /* Change text color to golden */
 }
+svg{
+    width: 15px;
+}
+
+/* -------------------------About--------------------- */
+
+.about-container{
+
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.col-2{
+    
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+
+}
+
+.col-2 h1{
+    color: #ffcc00;
+
+}
+.col-2 h5{
+    padding:10px 0 ;
+    font-size: 15px
+}
+.col-2 span{
+    color: #ffcc00;
+}
+.col-2 p{
+    padding: 20px 0;
+}
+.detail{
+    flex-basis: 35%;
+    padding: 50px;
+}
+    
+
+/* -----------------Education----------------------- */
+
+
+  
+.container-edu {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-3 {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bordered-section {
+    border: 2px solid #fff; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .time-line {
+    margin-top: 20px;
+    position: relative; /* Position relative for ::before pseudo-element */
+  }
+  
+  .time-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px; /* Adjust to position the line between dots */
+    width: 2px;
+    height: 100%;
+    background-color: #fff; /* Color of the line */
+    z-index: -1; /* Place behind the content */
+  }
+  
+  .timeline-item {
+    position: relative; /* Position relative for ::before pseudo-element */
+    margin-bottom: 20px;
+    padding-left: 40px; /* Adjust to make space for the dot and keep h3 parallel */
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform:  translateY(-125%) translateX(16%);
+    left: 10px; /* Adjust to position the dot correctly inside the box */
+    width: 16px;
+    height: 16px;
+    background-color: gold; /* Color of the dot */
+    border-radius: 50%;
+    z-index: 1; /* Ensure dot is above the line */
+  }
+  
+  h2 {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  h3 {
+    margin: 5px 0;
+    display: inline-block;
+  }
+  
+  h4 {
+    margin: 5px 30px; /* Adjusted margin for h4 */
+  }
+  
+  .bordered-section:hover {
+    border-color: #ffcc00;
+  }
+  
+  .col-3 h2 {
+    color: #ffcc00;
+    margin: 50px auto;
+  }
+  /* ------------------- projects --------------- */
+
+.project-container{
+     text-align: center;
+     margin: 150px auto;
+
+}
+.project-title{
+
+}
+.row-1{
+    display: flex;
+    padding: auto 30px;
+
+}
+.col-4{
+    margin-top: 100px;
+    flex-basis: 33.3%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 50px;
+    margin:  40px 20px;
+    transition: border .3s ease-in-out;
+
+}
+.col-4:hover{
+    border: 2px solid #ffcc00;
+   
+}
+.col-4 i{
+    border: 2px solid #ffcc00;
+   font-size: 30px;
+    border-radius: 43px;
+    padding: 23px;
+    margin-bottom:15px;
+    background-color: #ffcc00;
+    color: #020202;
+    transition: color .5s ease-in ,background .5s ease-in , border-color .5s ease-in ;
+}
+.project-title h1{
+    color: #ffcc00;
+
+}
+.col-4:hover i {
+    color: #fff; /* Change the color of the icon */
+    background: #000000;
+    border-color: #020202; 
+    
+}
+
+/* <!-- -----------------Contact Me ---------------------------------  */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-title h1{
+    color:#ffcc00 ;
+}
+
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensure inputs are centered */
+    width: 100%; /* Adjust to parent width if needed */
+}
+
+input {
+    padding: 20px;
+    width: 60%;
+    margin-bottom: 10px; 
+    border-radius: 33px;
+}
+
+.btn-contact {
+    display: flex;
+    justify-content: center; /* Center text within the button */
+    align-items: center; /* Center text within the button */
+    border: 2px solid #ffcc00;
+    padding: 15px;
+    margin: 40px;
+    width: 50%;
+    cursor: pointer; /* Change cursor to pointer to indicate button is clickable */
+    text-align: center; 
+    border-radius: 33px;
+    transition:background-color .5s ease-in, color .5s ease-in;
+} 
+
+.btn-contact:hover {
+    background-color: #ffcc00; /* Optional: Add hover effect for better UX */
+    color: rgb(0, 0, 0);
+}
+
+
+.footer {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 15px 0 26px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .message {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 10px;
+  }
+  
+  .copyright {
+    font-size: 12px;
+  }
 
